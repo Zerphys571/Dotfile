@@ -10,13 +10,13 @@ EXTENSAO="${EXTENSAO,,}"
 
 #Utiliza a funcao case para verificar as extensoes dos arquivos
 case "${EXTENSAO}" in
-c | cpp | py | config | rasi | json | ino | css | sh)
+c | cpp | py | conf | rasi | json | ino | css | sh)
     zeditor "${ARQUIVO}" &
     ;;
 mp4 | png | jpg | jpeg)
     mpv "${ARQUIVO}" &
     ;;
 *)
-    nautilus "${Home}/${ARQUIVO}" &
+    nautilus "${HOME}/${ARQUIVO}" &
     ;;
 esac
