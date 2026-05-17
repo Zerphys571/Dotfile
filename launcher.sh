@@ -18,4 +18,5 @@ theme='style-5'
 rofi \
     -show drun \
     -modi "drun,run,filebrowser,atalhos:${HOME}/.config/rofi/custom/keybinds.sh" \
+    -filebrowser-command "${HOME}/.config/rofi/custom/arquivos.sh" \
     -theme ${dir}/${theme}.rasi
